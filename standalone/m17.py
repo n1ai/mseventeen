@@ -1129,18 +1129,12 @@ class M17Receiver(object):
         return(dframe)
 
     def stop(self, mframe):
-        # Check that the eot bits are the ones we expect
-        # np.testing.assert_array_equal(mframe, self.eot, "EOT mismatch")
-        # NOTE: Currently m17-mod in symbol mode seems to mess up the EOT.
+        # Check that the eot bits are the ones we expect.
+        # Some versions of m17-mod in symbol mode mess up the EOT.
         # It puts out a syncword's worth of the correct bytes
         # [ 03 03 03 03 03 03 FD 03 ] followed by 40 zeros so 48 bytes.  
-        # M17 frames are supposed to be 192 bytes in symbol mode since each 
-        # frame is 384 bits and one byte represents two bits in symbol mode.
-        # The first eight bytes are the right ones for EOT, but they should 
-        # be repeated (192/8)-1 = 23 more times, instead we see they are 
-        # followed by seven repeats of [ 0 0 0 0 0 0 0 0 ].
-        # So, just issue warning and move on.
-        # TODO: come up with bug fix for m17-mod
+        # Fix is at https://github.com/n1ai/m17-cxx-demod/pull/1
+        # For now, just issue a warning instead of raising an error.
         if not np.array_equal(mframe, self.eot):
             print("Warning: EOT is not in expected form", file = sys.stderr)
         # recv EOT frame
