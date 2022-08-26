@@ -84,18 +84,18 @@ needs to have the Linux codec2 package installed for it to work.
 ### Installing
 
 * Download the contents of this folder
-* Optionally, use 'make test' to run the test script, which depends on 
-  having the code from https://github.com/n1ai/m17-cxx-demod built and
-  installed
-* Optionally, use 'sudo make install' to install m17.py to /usr/local/bin
+* Optionally, use `sudo make install` to install `m17.py` to `/usr/local/bin`
+* Optionally, use `make test` to run the test script.
+  This script depends on having the code from 
+  [n1ai fork of the m17-cxx-demo repo](https://github.com/n1ai/m17-cxx-demod) 
+  built and  installed.  It also depends on having files from the 
+  [n1ai m17-meta repo](https://github.com/n1ai/m17-meta) repo built
+  and installed.
 
 ### Executing the program
 
 The `m17test.sh` script shows several different examples of 
-how to use this program.  That script uses files from the 
-[n1ai m17-meta repo](https://github.com/n1ai/m17-meta)
-that provide input audio, as well as m17 in `bin` and
-`sym` format that can be processed by the `m17.py` program.
+how to use this program.  
 
 Also, there is a `--help` command line option that provides
 detailed information on how to use the program:
