@@ -131,7 +131,7 @@ $ m17.py --infile audio.aud --function tx > audio.sym
 
 4) Read audio in M17 symbol format, play to default speaker
 
-$ m17 --infile audio.sym --function rx 
+$ m17.py --infile audio.sym --function rx 
 
 ```
 
@@ -141,7 +141,7 @@ Some ideas:
 * Implement the parts of a full M17 stack that are not implemented here:
   BERT mode, packet mode, symbol detection/generation, filtering, 4fsk,
   "radio-like" state machines and queuing, etc
-* Implement input from microphone using soundcard.microphone class
+* Implement input from microphone using `soundcard.microphone` class
 * Move away from the single file approach used during development to 
   Python modules
 * Use Python threading so transmit, recive, and audio can be in separate 
