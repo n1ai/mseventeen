@@ -31,7 +31,17 @@ basis for a GNU Radio Python block, but my initial results indicate
 that while transmit performance was good, receive performance was not.
 In particular, the overhead of the commpy viterbi decoder was not good
 enough for real-time decoding of a single M17 stream on a fast Intel
-CPU. This led me to decide to publish this work as it currently is and
+CPU. 
+
+The following screenshot shows the output of the Python profiler
+when running a development version of the `m17.py` program.  It
+shows approximiately 80% of the CPU cycles were used by the 
+commpy viterbi decoder and things that it calls.
+
+![Profile Screenshot](m17-rx-profile.png)
+
+While I considered a few different approaches to resolving this problem,
+it led me to decide to publish this work as it currently is and
 to focus my future efforts on exploring C++ implementations.  I may or
 may not revisit this code, but for now, I'm releasing it as-is in case
 it is useful to others.
