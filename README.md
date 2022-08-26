@@ -1,9 +1,8 @@
 # mseventeen
-M17 Code in Python, based on https://github.com/mobilinkd/m17-demodulator
+M17 Code in Python
 
-This work is attributed to Rob Riggs, WX9O, Mobilinkd LLC.
-
-This work has been extended by David Cherkus, N1AI.
+Projects in this repository:
+* [M17 Python Standalone](https://github.com/n1ai/mseventeen/standalone)
 
 This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
