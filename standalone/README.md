@@ -149,7 +149,7 @@ Some ideas:
 * Implement input from microphone using `soundcard.microphone` class
 * Move away from the single file approach used during development to 
   Python modules
-* Use Python threading so transmit, recive, and audio can be in separate 
+* Use Python threading so transmit, receive, and audio can be in separate 
   threads
 * Find or make a faster implementation of a viterbi decoder
 
