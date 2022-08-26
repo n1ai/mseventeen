@@ -81,9 +81,14 @@ needs to have the Linux codec2 package installed for it to work.
 
 ### Executing the program
 
-The 'm17test.sh' script shows several different examples of how
-to use this program.  Also, there is detailed `help` command
-line option:
+The `m17test.sh` script shows several different examples of 
+how to use this program.  That script uses files from the 
+[n1ai m17-meta repo](https://github.com/n1ai/m17-meta)
+that provide input audio, as well as m17 in `bin` and
+`sym` format that can be processed by the `m17.py` program.
+
+Also, there is a `--help` command line option that provides
+detailed information on how to use the program:
 
 ```
 $ ./m17.py --help
@@ -144,7 +149,7 @@ Some ideas:
 * Implement input from microphone using `soundcard.microphone` class
 * Move away from the single file approach used during development to 
   Python modules
-* Use Python threading so transmit, recive, and audio can be in separate 
+* Use Python threading so transmit, receive, and audio can be in separate 
   threads
 * Find or make a faster implementation of a viterbi decoder
 
