@@ -2,7 +2,7 @@
 M17 Code in Python
 
 Projects in this repository:
-* [M17 Python Standalone](https://github.com/n1ai/mseventeen/standalone)
+* [M17 Python Standalone](https://github.com/n1ai/mseventeen/tree/main/standalone)
 
 This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
