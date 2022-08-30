@@ -50,7 +50,7 @@ This code is tested against the M17 modulator/demodulator code in the
 [n1ai m17-cxx-demod repo](https://github.com/n1ai/m17-cxx-demod) which 
 is a fork of the 
 [mobilinkd m17-cxx-demod repo](https://github.com/mobilinkd/m17-cxx-demod).
-The fork has cherry picked code from pending pull requests, in particular
+The fork has cherry-picked code from pending pull requests, in particular
 the code from 
 [Pull Request 21](https://github.com/mobilinkd/m17-cxx-demod/pull/21)
 by [robojay](https://github.com/robojay)
